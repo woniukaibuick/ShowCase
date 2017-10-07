@@ -1,6 +1,5 @@
 package showcase.dw.glbg.thread; //: concurrency/ThreadVariations.java
 // Creating threads with inner classes.
-package showcase.dw.glbg.thread;
 
 import static showcase.dw.glbg.util.Print.*;
 

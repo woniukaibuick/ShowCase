@@ -1,6 +1,5 @@
 package showcase.dw.glbg.thread; //: concurrency/ToastOMatic.java
 // A toaster that uses queues.
-package showcase.dw.glbg.thread;
 import java.util.concurrent.*;
 import java.util.*;
 import static showcase.dw.glbg.util.Print.*;
