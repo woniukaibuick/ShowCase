@@ -14,7 +14,7 @@ import org.apache.hadoop.mapred.Reporter;
 * @Title: ReporterTest.java 
 * @Package showcase.dw.glbg.mr 
 * @Description: TODO(description) 
-* @author gongxuesong@globalegrow.com   
+   
 * @date 2017年10月6日 下午2:04:46   
 */
 public class ReporterTest extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable>{

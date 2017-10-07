@@ -3,7 +3,7 @@ package showcase.dw.glbg.thread;
 * @Title: EnhancedIntGenerator.java 
 * @Package showcase.dw.glbg.thread 
 * @Description: TODO(description) 
-* @author gongxuesong@globalegrow.com   
+   
 * @date 2017年10月7日 下午8:23:21   
 */
 public abstract class EnhancedIntGenerator {

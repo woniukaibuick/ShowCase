@@ -35,7 +35,7 @@ import org.apache.hadoop.util.ToolRunner;
 * @Title: WordCount2nd.java 
 * @Package showcase.dw.glbg.mr 
 * @Description: TODO(description) 
-* @author gongxuesong@globalegrow.com   
+   
 * @date 2017年10月6日 上午11:40:07   
 */
 public class WordCount2nd extends Configured implements Tool {

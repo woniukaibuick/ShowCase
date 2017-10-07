@@ -8,7 +8,7 @@ import org.junit.Test;
  * @Title: StringTest.java
  * @Package showcase.dw.glbg.str
  * @Description: TODO(description)
- * @author gongxuesong@globalegrow.com
+
  * @date 2017年10月6日 下午3:32:57
  */
 public class StringTest {
