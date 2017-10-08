@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 * @Title: CountingCooperate.java 
 * @Package showcase.dw.glbg.thread 
 * @Description: TODO(description) 
-   
 * @date 2017年10月7日 下午6:09:27   
 */
 public class CountingCooperate {
@@ -17,10 +16,10 @@ public class CountingCooperate {
 		Thread oddThread = new Thread(new OddCounting(counting));
 		evenThread.start();
 		oddThread.start();
-		while (!counting.isCompleted()) {
-			System.err.println(evenThread.holdsLock(counting));
-			TimeUnit.SECONDS.sleep(5);
-		}
+//		while (!counting.isCompleted()) {
+//			System.err.println(evenThread.holdsLock(counting));
+//			TimeUnit.SECONDS.sleep(5);
+//		}
 		
 	}
 

@@ -19,17 +19,49 @@ import junit.framework.Assert;
 /**   
 * @Title: ThreadTest.java 
 * @Package showcase.dw.glbg.thread 
-* @Description: TODO(description) 
-   
+* @Description: TODO(description)    
 * @date 2017年10月6日 下午9:33:19   
 */
 public class ThreadTest {
 	
-	public static void main(String[] args) {
-		//1.临界资源
+	public static void main(String[] args) throws InterruptedException {
 		ThreadTest threadTest = new ThreadTest();
+		//如何在Java中实现线程？
+		//用Runnable还是Thread？
+		//Java中Runnable和Callable有什么不同？
+		//Java中CyclicBarrier 和 CountDownLatch有什么不同？
+		//什么是线程安全？
+		//Java中如何停止一个线程？
+		//异常逃逸 
+		ExceptionThread exceptionThread;
+		
+		//临界资源
+		//ThreadLocal变量？
+		//volatile防止字撕裂,volatile 变量和 atomic 变量有什么不同？
+		//原子类 AtomicInteger,AtomicLong,AtomicReference,原子操作需不需要同步控制，利用原子操作写无锁代码
 		threadTest.testThreadsCollide();
-		//2.协作
+		
+		//synchronized(this) or synchronized(obejct)
+		//同步控制块还是整个方法 synchronized methods or block
+		SyncObject so;
+		
+		
+		
+		//如何控制多个线程执行顺序
+		//优先级设置，后台线程设置，休眠，join
+		threadTest.testThreadJoin();
+		threadTest.testSetDaemonAndPriority();
+		
+		//sleep,yield，wait谁释放了锁，谁没有？		
+		//为什么wait, notify 和 notifyAll这些方法不在thread类里面？		
+		//怎么检测一个线程是否拥有锁？
+		
+		//线程安全的单例模式
+		MySingleton mySingleton;
+				
+		
+		//协作,共享数据等
+		//notify 和 notifyAll有什么区别？
 		Counting counting = new Counting();
 		Thread evenThread = new Thread(new EvenCounting(counting));
 		Thread oddThread = new Thread(new OddCounting(counting));
@@ -55,8 +87,12 @@ public class ThreadTest {
 	}
 	
 	@Test
-	public void testLock() {
-		Lock lock = new ReentrantLock();
+	public void testSetDaemonAndPriority() {
+		ThreadOne t1 = new ThreadOne();
+		ThreadTwo t2 = new ThreadTwo(t1);
+		t1.setDaemon(true);
+		t1.setPriority(Thread.MAX_PRIORITY);
+		
 	}
 	
 	@Test
