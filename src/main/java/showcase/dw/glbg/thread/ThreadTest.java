@@ -29,7 +29,9 @@ public class ThreadTest {
 		//如何在Java中实现线程？
 		//用Runnable还是Thread？
 		//Java中Runnable和Callable有什么不同？
+		threadTest.testDifference();
 		//Java中CyclicBarrier 和 CountDownLatch有什么不同？
+		CountDownLatchDemo cdd;
 		//什么是线程安全？
 		//Java中如何停止一个线程？
 		//异常逃逸 
@@ -84,6 +86,13 @@ public class ThreadTest {
 	@Test
 	public void testAccessWithoutLock() {
 		
+	}
+	
+	@Test
+	public void testDifference() {
+		Runnable runnable;
+		Callable callable;
+		Thread   thread;
 	}
 	
 	@Test
