@@ -1,6 +1,7 @@
 package showcase.dw.glbg.thread;
 
 import java.util.ArrayList;
+import java.util.Timer;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -71,6 +72,8 @@ public class ThreadTest {
 		evenThread.start();
 		oddThread.start();
 		
+		
+		Timer timer;
 		
 	}
 	
@@ -270,7 +273,7 @@ class MySingleton {
     public static MySingleton getInstance() {  
         try {    
             if(instance != null){//懒汉式   
-                  
+                  return instance;
             }else{  
                 //创建实例之前可能会有一些准备性的耗时工作   
                 Thread.sleep(300);  

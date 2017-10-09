@@ -11,8 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -34,6 +33,7 @@ public class CloneTest {
 		List<String> myCloneList =(List<String>) strList.clone();
 		myCloneList.remove(0);
 		Collections.reverse(myCloneList);
+		assert myCloneList.get(0).equals(strList.get(0)) :"deep clone!"; 
 		System.err.println(myCloneList.get(0));
 		System.err.println(strList.get(0));
 		Assert.assertEquals(strList.size(), 9);
