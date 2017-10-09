@@ -19,7 +19,8 @@ import junit.framework.Assert;
 /**   
 * @Title: ThreadTest.java 
 * @Package showcase.dw.glbg.thread 
-* @Description: TODO(description)    
+* @Description: TODO(description)   
+* @author gongxuesong 
 * @date 2017年10月6日 下午9:33:19   
 */
 public class ThreadTest {
