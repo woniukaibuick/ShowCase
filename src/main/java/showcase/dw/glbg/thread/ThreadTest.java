@@ -2,14 +2,21 @@ package showcase.dw.glbg.thread;
 
 import java.util.ArrayList;
 import java.util.Timer;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.DelayQueue;
+import java.util.concurrent.Delayed;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 import org.junit.Test;
 
@@ -31,7 +38,7 @@ public class ThreadTest {
 		//如何在Java中实现线程？
 		//用Runnable还是Thread？
 		//Java中Runnable和Callable有什么不同？
-//		threadTest.testDifference();
+		threadTest.testDifference();
 		//Java中CyclicBarrier 和 CountDownLatch有什么不同？
 		CountDownLatchDemo cdd;
 		//什么是线程安全？
@@ -43,7 +50,7 @@ public class ThreadTest {
 		//ThreadLocal变量？
 		//volatile防止字撕裂,volatile 变量和 atomic 变量有什么不同？
 		//原子类 AtomicInteger,AtomicLong,AtomicReference,原子操作需不需要同步控制，利用原子操作写无锁代码
-//		threadTest.testThreadsCollide();
+		threadTest.testThreadsCollide();
 		
 		//synchronized(this) or synchronized(obejct)
 		//同步控制块还是整个方法 synchronized methods or block
@@ -53,8 +60,8 @@ public class ThreadTest {
 		
 		//如何控制多个线程执行顺序
 		//优先级设置，后台线程设置，休眠，join
-//		threadTest.testThreadJoin();
-//		threadTest.testSetDaemonAndPriority();
+		threadTest.testThreadJoin();
+		threadTest.testSetDaemonAndPriority();
 		
 		//sleep,yield，wait谁释放了锁，谁没有？		
 		//为什么wait, notify 和 notifyAll这些方法不在thread类里面？		
@@ -62,7 +69,7 @@ public class ThreadTest {
 		
 		//线程安全的单例模式
 		MySingleton mySingleton;
-				
+
 		
 		//协作,共享数据等
 		//notify 和 notifyAll有什么区别？
@@ -74,7 +81,18 @@ public class ThreadTest {
 		
 		
 		Timer timer;
+		CountDownLatch c;
+		CyclicBarrier cc;
+		Semaphore se;
 		
+		FutureTask<String> ft;
+		
+		ArrayBlockingQueue<String> arrayBlockingQueue;
+		LinkedBlockingQueue<String> linkedBlockingQueue;
+		DelayQueue<Delayed> delayQueue;
+		
+		ThreadPoolExecutor tpe ;
+		Thread.currentThread() ;
 	}
 	
 	/**
