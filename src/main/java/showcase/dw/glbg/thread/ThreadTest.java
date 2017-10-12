@@ -2,10 +2,9 @@ package showcase.dw.glbg.thread;
 
 import java.util.ArrayList;
 import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Callable;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.ExecutionException;
@@ -14,13 +13,14 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.Semaphore;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
 import junit.framework.Assert;
+import showcase.dw.glbg.thread.kill.ThreadKillTest;
 
 
 
@@ -33,14 +33,22 @@ import junit.framework.Assert;
 */
 public class ThreadTest {
 	
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
+		EvenChecker.test(new EvenGenerator());
+	}
+	
+	public void demoStep() throws InterruptedException {
 		ThreadTest threadTest = new ThreadTest();
 		//如何在Java中实现线程？
 		//用Runnable还是Thread？
 		//Java中Runnable和Callable有什么不同？
 		threadTest.testDifference();
+		
 		//Java中CyclicBarrier 和 CountDownLatch有什么不同？
-		CountDownLatchDemo cdd;
+		CyclicBarrierDemo cdb;
+		CountDownLatchDemo2 cdld;
+		SemaphoreSampleDemo ssd;
+		
 		//什么是线程安全？
 		//Java中如何停止一个线程？
 		//异常逃逸 
@@ -50,12 +58,15 @@ public class ThreadTest {
 		//ThreadLocal变量？
 		//volatile防止字撕裂,volatile 变量和 atomic 变量有什么不同？
 		//原子类 AtomicInteger,AtomicLong,AtomicReference,原子操作需不需要同步控制，利用原子操作写无锁代码
+		//com.globalegrow.hadoop.Utils.PatternUtil 实际运用，lock不至于过早暴露数据;
 		threadTest.testThreadsCollide();
 		
 		//synchronized(this) or synchronized(obejct)
 		//同步控制块还是整个方法 synchronized methods or block
 		SyncObject so;
 		
+		//kill a thread 
+		ThreadKillTest tk;
 		
 		
 		//如何控制多个线程执行顺序
@@ -72,6 +83,8 @@ public class ThreadTest {
 
 		
 		//协作,共享数据等
+		ThreadDataShareDemo tds;
+		
 		//notify 和 notifyAll有什么区别？
 		Counting counting = new Counting();
 		Thread evenThread = new Thread(new EvenCounting(counting));
@@ -81,18 +94,28 @@ public class ThreadTest {
 		
 		
 		Timer timer;
-		CountDownLatch c;
-		CyclicBarrier cc;
-		Semaphore se;
-		
 		FutureTask<String> ft;
 		
+		//interface BlockingQueue
 		ArrayBlockingQueue<String> arrayBlockingQueue;
 		LinkedBlockingQueue<String> linkedBlockingQueue;
 		DelayQueue<Delayed> delayQueue;
 		
 		ThreadPoolExecutor tpe ;
-		Thread.currentThread() ;
+		Thread.currentThread();
+		Runnable r;
+		Callable ca;
+		Executors.newSingleThreadExecutor();
+		ScheduledExecutorService ses;
+		new Timer().scheduleAtFixedRate(new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+		}, 0, 10);
+		
 	}
 	
 	/**
@@ -222,7 +245,6 @@ class ThreadOne extends Thread{
 		try {
 			TimeUnit.SECONDS.sleep(10);
 			System.out.println("thread one do something@!");
-			System.err.println("thread one catch:Thread.currentThread().isInterrupted:"+Thread.currentThread().isInterrupted());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -246,7 +268,6 @@ class ThreadTwo extends Thread{
 		// TODO Auto-generated method stub
 		try {
 			threaOne.join();
-			System.err.println("thread two catch:Thread.currentThread().isInterrupted:"+Thread.currentThread().isInterrupted());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

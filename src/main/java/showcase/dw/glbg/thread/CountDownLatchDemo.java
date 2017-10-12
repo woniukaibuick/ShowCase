@@ -51,7 +51,7 @@ class WaitingTask implements Runnable {
 }
 
 public class CountDownLatchDemo {
-  static final int SIZE = 100;
+  static final int SIZE = 10;
   public static void main(String[] args) throws Exception {
     ExecutorService exec = Executors.newCachedThreadPool();
     // All must share a single CountDownLatch object:
