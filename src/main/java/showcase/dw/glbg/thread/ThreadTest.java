@@ -44,6 +44,10 @@ public class ThreadTest {
 		//Java中Runnable和Callable有什么不同？
 		threadTest.testDifference();
 		
+		//setDaemon()的影响力
+		//后台进程在不执行finally子句的情况下就会终止其run方法
+		DaemonsDontRunFinally ddff;
+		
 		//Java中CyclicBarrier 和 CountDownLatch有什么不同？
 		CyclicBarrierDemo cdb;
 		CountDownLatchDemo2 cdld;

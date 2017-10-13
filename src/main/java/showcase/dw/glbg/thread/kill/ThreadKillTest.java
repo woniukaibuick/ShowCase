@@ -3,6 +3,7 @@ package showcase.dw.glbg.thread.kill;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 /**   
@@ -17,15 +18,16 @@ public class ThreadKillTest {
 	public static void main(String[] args) throws InterruptedException {
 //		 testKillTHreadByException();
 //		 testKillThreadByPassPara();
-//		 testCancelFutureTask();
+		 testCancelFutureTask();
 	}
 	private static void testCancelFutureTask() {
 		 ExecutorService exec = Executors.newCachedThreadPool();
 		 CancelFutureTaskThread cftt = new CancelFutureTaskThread();
-		 FutureTask<String> task = new FutureTask<>(cftt);
-		 exec.submit(task);
-		 System.err.println(task.isDone());
-		 task.cancel(true);
+		 Future<?>  mytask = exec.submit(cftt);
+//		 System.out.println(task.isDone());
+//		 task.cancel(true);
+		 mytask.cancel(true);
+		 exec.shutdown();
 	}
 	/**
 	 * output:
@@ -106,12 +108,21 @@ class CancelableThread implements Runnable{
 
 class CancelFutureTaskThread implements Callable<String>{
 
+	private boolean flag = true;
 	@Override
 	public String call() throws Exception {
 		// TODO Auto-generated method stub
-		while (true) {
-			System.err.println("runing");
+		try {
+			while (flag) {
+				System.err.println("runing");
+				Thread.sleep(1000);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
+		return "";
 	}
 	
 }
