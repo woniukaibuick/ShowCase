@@ -1,15 +1,10 @@
 package showcase.dw.glbg.canal;
 import java.io.ByteArrayInputStream;
 import java.io.ObjectInputStream;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
 
 import dto.TransDTO;
 import kafka.consumer.Consumer;
@@ -17,7 +12,7 @@ import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
-import util.BeanUtils;
+import showcase.dw.glbg.canal.util.BeanUtils;
 
 /**   
 * @Title: cc.java 
