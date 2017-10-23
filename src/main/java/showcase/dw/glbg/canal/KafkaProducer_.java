@@ -3,10 +3,10 @@ package showcase.dw.glbg.canal;
 
 import java.util.Properties;
 
-import dto.TransDTO;
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
+import showcase.dw.glbg.canal.dto.TransDTO;
 
 public class KafkaProducer_{
 	String topic;

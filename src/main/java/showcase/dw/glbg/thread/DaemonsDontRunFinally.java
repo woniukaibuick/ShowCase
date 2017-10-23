@@ -6,12 +6,12 @@ import static showcase.dw.glbg.util.Print.*;
 class ADaemon implements Runnable {
   public void run() {
     try {
-      print("Starting ADaemon");
+      print(Thread.currentThread().getName()+" Starting ADaemon");
       TimeUnit.SECONDS.sleep(1);
     } catch(InterruptedException e) {
       print("Exiting via InterruptedException");
     } finally {
-      print("This should always run?");
+      print(Thread.currentThread().getName()+" This should always run?");
     }
   }
 }
@@ -19,6 +19,10 @@ class ADaemon implements Runnable {
 public class DaemonsDontRunFinally {
   public static void main(String[] args) throws Exception {
     Thread t = new Thread(new ADaemon());
+    t.setName("thread one");
+    Thread tt = new Thread(new ADaemon());
+    tt.setName("thread two"); 
+    tt.start(); 
     t.setDaemon(true);
     t.start();
   }

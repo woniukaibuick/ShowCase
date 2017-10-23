@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import dto.TransDTO;
 import kafka.consumer.Consumer;
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
+import showcase.dw.glbg.canal.dto.TransDTO;
 import showcase.dw.glbg.canal.util.BeanUtils;
 
 /**   

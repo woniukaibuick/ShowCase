@@ -11,12 +11,12 @@ public class EvenChecker implements Runnable {
   }
   public void run() {
     while(!generator.isCanceled()) {
-      int val = generator.next();
+//      int val = generator.next();
 //      int val = generator.synchronizedNext();
 //    	int val = generator.lockedNext();
 //    	int val = generator.atomicNext();
 //    	int val = generator.lockedNextAndReturnInAvance();
-//    	int val = generator.atomicNextStepByStep();
+    	int val = generator.atomicNextStepByStep();
 //    	int val = generator.threadLocalNext();
       if(val % 2 != 0) {
         System.out.println(val + " not even!");

@@ -32,13 +32,15 @@ import showcase.dw.glbg.thread.kill.ThreadKillTest;
 * @date 2017年10月6日 下午9:33:19   
 */
 public class ThreadTest {
-	
+	private ThreadTest threadTest = new ThreadTest();
 	public static void main(String[] args) {
 		EvenChecker.test(new EvenGenerator());
+		
+//		ThreadOne t1 = new ThreadOne();
+//		ThreadTwo t2 = new ThreadTwo(t1);
 	}
 	
 	public void demoStep() throws InterruptedException {
-		ThreadTest threadTest = new ThreadTest();
 		//如何在Java中实现线程？
 		//用Runnable还是Thread？
 		//Java中Runnable和Callable有什么不同？
@@ -55,6 +57,7 @@ public class ThreadTest {
 		
 		//什么是线程安全？
 		//Java中如何停止一个线程？
+		ThreadKillTest kill;
 		//异常逃逸 
 		ExceptionThread exceptionThread;
 		
@@ -66,7 +69,7 @@ public class ThreadTest {
 		threadTest.testThreadsCollide();
 		
 		//synchronized(this) or synchronized(obejct)
-		//同步控制块还是整个方法 synchronized methods or block
+		//同步控制块还是方法 synchronized methods or block
 		SyncObject so;
 		
 		//kill a thread 

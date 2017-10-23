@@ -7,7 +7,7 @@ public class ExceptionThread implements Runnable {
     throw new RuntimeException();
   }
   public static void main(String[] args) {
-	  Thread.setDefaultUncaughtExceptionHandler(new UserDefinedUncaughtExceptionHandler());
+//	  Thread.setDefaultUncaughtExceptionHandler(new UserDefinedUncaughtExceptionHandler());
 	  testCaptureEscapedException();
   }
   

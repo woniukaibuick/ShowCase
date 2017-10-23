@@ -22,8 +22,8 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.client.Table;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import dto.HbaseEntity;
-import dto.TransDTO;
+import showcase.dw.glbg.canal.dto.HbaseEntity;
+import showcase.dw.glbg.canal.dto.TransDTO;
 
 public class HbaseHelper {
 

@@ -26,7 +26,7 @@ public class ThreadKillTest {
 		 Future<?>  mytask = exec.submit(cftt);
 //		 System.out.println(task.isDone());
 //		 task.cancel(true);
-		 mytask.cancel(true);
+//		 mytask.cancel(true);
 		 exec.shutdown();
 	}
 	/**
