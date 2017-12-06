@@ -61,5 +61,42 @@ public class Master implements Watcher {
 		// TODO Auto-generated method stub
 		System.out.println(arg0);
 	}
+	
+	
+	private void bootstrap(){
+		createParent("/workers", new byte[0]);
+		createParent("/assign", new byte[0]);
+		createParent("/tasks", new byte[0]);
+		createParent("/status", new byte[0]);
+		
+	}
+	
+	private void createParent(final String path, byte[] data){
+		StringCallback sc = new StringCallback() {
+			
+			public void processResult(int arg0, String arg1, Object arg2, String arg3) {
+				// TODO Auto-generated method stub
+				switch (Code.get(arg0)) {
+				case OK:
+					System.out.println("create node succeed@!");
+					break;
+					
+				case NODEEXISTS:
+					System.out.println("node exists@!");
+					break;
+					
+				case CONNECTIONLOSS:
+					System.out.println("connection loss, will try again@!");
+					createParent(path, (byte[])arg2);
+					break;
+				default:
+					System.out.println("create node failed:"+Code.get(arg0));
+					break;
+				}
+			}
+		};
+		
+		zk.create(path, data, Ids.READ_ACL_UNSAFE, CreateMode.EPHEMERAL, sc, data);
+	}
 
 }
