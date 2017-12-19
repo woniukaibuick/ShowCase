@@ -8,10 +8,13 @@ import java.net.URL;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.hdfs.DFSInputStream;
+import org.apache.hadoop.hdfs.DFSOutputStream;
 import org.apache.hadoop.io.IOUtils;
 
 /**   
@@ -32,6 +35,7 @@ public class HDFSPractice {
 	
 	static void testDFSFileStatus() {
 		FileStatus fs ;
+		
 	}
 	
 	/*
@@ -61,6 +65,34 @@ public class HDFSPractice {
 		 * Utility that wraps a FSInputStream in a DataInputStream and buffers input through a BufferedInputStream. 
 		 */
 		
+		/**
+		 * FSDataOutputStream
+		 * Utility that wraps a OutputStream in a DataOutputStream.
+		 */
+		
+		/** 
+		 * DFSOutputStream:
+		 * DFSOutputStream creates files from a stream of bytes. 
+		 * The client application writes data that is cached internally by this stream.
+		 *  Data is broken up into packets, each packet is typically 64K in size. 
+		 *  A packet comprises of chunks. Each chunk is typically 512 bytes and has an associated checksum with it. 
+		 *  When a client application fills up the currentPacket, it is enqueued into dataQueue.
+		 *   The DataStreamer thread picks up packets from the dataQueue,
+		 *    sends it to the first datanode in the pipeline and moves it from the dataQueue to the ackQueue. 
+		 *    The ResponseProcessor receives acks from the datanodes.
+		 *     When an successful ack for a packet is received from all datanodes,
+		 *      the ResponseProcessor removes the corresponding packet from the ackQueue. 
+		 *      In case of error, all outstanding packets and moved from ackQueue.
+		 *       A new pipeline is setup by eliminating the bad datanode from the original pipeline. 
+		 *       The DataStreamer now starts sending packets from the dataQueue.
+		 *       eliminating:排除  pipeline:管线，比如3个节点的管线，第一个节点存储后会将文件发给第二个节点，第二个节点存储后发给你三个节点
+		 */
+		
+		/**
+		 * DFSInputStream:
+		 * DFSInputStream provides bytes from a named file. 
+		 * It handles negotiation of the namenode and various datanodes as necessary.
+		 */
 		
 	}
 	
