@@ -7,6 +7,7 @@ import java.net.URI;
 import java.net.URL;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
@@ -47,9 +48,20 @@ public class HDFSPractice {
 		FileStatus fStatus =  fs.getFileStatus(new Path(uri));
 		//FileStatus{path=hdfs://cdh-node0:8020/user/gongxuesong/mr_data/stock_in.java; isDirectory=false; length=54166; replication=3; blocksize=134217728; modification_time=1513060464819; access_time=1513649934142; owner=hdfs; group=gongxuesong; permission=rw-r--r--; isSymlink=false}
 		System.err.println(fStatus.getBlockSize());
+		
+		FileStatus[] fileStatus = fs.globStatus(new Path("/user/gong*"));
+		System.err.println(fileStatus.length);
+		
 		InputStream is = fs.open(new Path(uri));
 		IOUtils.copyBytes(is, System.out, 1,false);
 		IOUtils.closeStream(is);
+		
+		
+		/** FSDataInputStream:
+		 * Utility that wraps a FSInputStream in a DataInputStream and buffers input through a BufferedInputStream. 
+		 */
+		
+		
 	}
 	
 	static void testFsUrlStreamHandler() throws MalformedURLException, IOException {
