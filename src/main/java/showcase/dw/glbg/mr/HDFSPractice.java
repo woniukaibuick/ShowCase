@@ -9,13 +9,27 @@ import java.net.URL;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileChecksum;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.RawLocalFileSystem;
 import org.apache.hadoop.hdfs.DFSInputStream;
 import org.apache.hadoop.hdfs.DFSOutputStream;
+import org.apache.hadoop.hdfs.server.datanode.DataBlockScanner;
 import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.RawComparator;
+import org.apache.hadoop.io.Writable;
+import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.WritableComparator;
+import org.apache.hadoop.io.compress.CompressionCodec;
+import org.apache.hadoop.io.compress.CompressionOutputStream;
+import org.apache.hadoop.mapred.LocalClientProtocolProvider;
+import org.apache.hadoop.mapreduce.MRConfig;
+import org.apache.hadoop.util.ReflectionUtils;
+import org.apache.hadoop.util.RunJar;
 
 /**   
 * @Title: HDFSPractice.java 
@@ -29,12 +43,40 @@ public class HDFSPractice {
 		URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory());
 	}
 	static String uri = "hdfs://cdh-node0:8020/user/gongxuesong/mr_data/stock_in.java";
+	static String uri_1 = "hdfs://cdh-node0:8020/user/gongxuesong/data/sample.txt";
 	public static void main(String[] args) throws Exception {
-		testFileSystem() ;
+//		testFileSystem() ;
+//		testDFSFileStatus();
+//		tesetCompressionCodec() ;
+		 testWritableComparable() ;
+		
 	}
 	
-	static void testDFSFileStatus() {
-		FileStatus fs ;
+	static void testWritableComparable() {
+		WritableComparable w;
+		RawComparator t;
+		WritableComparator w1;
+		RawComparator<IntWritable> comparator = WritableComparator.get(IntWritable.class);
+		System.err.println(comparator.compare(new IntWritable(1), new IntWritable(2)));
+		
+	}
+	
+	static void testDFSFileStatus() throws IllegalArgumentException, IOException {
+		FileSystem fs = new RawLocalFileSystem();
+		FileChecksum fcs = fs.getFileChecksum(new Path(uri));
+		System.err.println(fcs.getAlgorithmName());
+		
+	}
+	
+	static void tesetCompressionCodec() throws IOException, ClassNotFoundException {
+		Class<?> clas = Class.forName("org.apache.hadoop.io.compress.GzipCodec");
+		CompressionCodec cos = (CompressionCodec) ReflectionUtils.newInstance(clas, new Configuration());
+		CompressionOutputStream coStream = cos.createOutputStream(System.out);
+		IOUtils.copyBytes(System.in, coStream, 4096, true);
+		coStream.flush();
+		
+//		org.apache.hadoop.io.compress.BZip2Codec
+//		org.apache.hadoop.io.compress.Lz4Codec
 		
 	}
 	
@@ -94,6 +136,48 @@ public class HDFSPractice {
 		 * It handles negotiation of the namenode and various datanodes as necessary.
 		 */
 		
+		
+		
+		/** DataBlockScanner
+		 * DataBlockScanner manages block scanning for all the block pools.
+		 *  For each block pool a BlockPoolSliceScanner is created which runs in a separate thread to scan
+		 *   the blocks for that block pool. When a BPOfferService becomes alive or dies,
+		 *    blockPoolScannerMap in this class is updated.
+		 */
+		
+		
+		
+		/**
+		 * org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(Job job, Cluster cluster) :
+		 * 
+			Internal method for submitting jobs to the system. 
+			
+			The job submission process involves: 
+			
+			1.Checking the input and output specifications of the job. 
+			2.Computing the InputSplits for the job. 
+			3.Setup the requisite accounting information for the DistributedCache of the job, if necessary. 
+			4.Copying the job's jar and configuration to the map-reduce system directory on the distributed file-system. 
+			5.Submitting the job to the JobTracker and optionally monitoring it's status. 
+			
+			Parameters:
+			job the configuration to submit
+			cluster the handle to the Cluster
+		 */
+		
+		
+		//LocalClientProtocolProvider;
+		//YarnClientProtocolProvider;
+		/**
+		 * String framework = conf.get(MRConfig.FRAMEWORK_NAME, MRConfig.LOCAL_FRAMEWORK_NAME)
+		 * 二者根据MRConfig.YARN_FRAMEWORK_NAME.equals(framework) 来决定用YARNRunner还是LocalJobRunner
+		 * 包含两个LocalClientProtocolProvider（本地作业） YarnClientProtocolProvider（Yarn作业），
+		 * 会根据mapreduce.framework.name的配置创建相应的客户端
+		 */
+		
+//		YarnClientImpl
+//		MRConfig
+//		RunJar
 	}
 	
 	static void testFsUrlStreamHandler() throws MalformedURLException, IOException {

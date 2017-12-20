@@ -7,6 +7,8 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.compress.CompressionCodec;
+import org.apache.hadoop.io.compress.GzipCodec;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -26,7 +28,15 @@ public class WeatherMr {
 			System.err.println("arguments not match,will exit directly!");
 			return ;
 		}
-		Job job = new Job(new Configuration());
+		Configuration conf = new Configuration();
+		//下面这两个属性的设置是无效的--理解错误，下面两个设置只是针对map阶段输出的压缩 优化
+//		conf.setBoolean("mapred.compress.map.output", true);
+//		conf.setClass("mapred.map.output.compression.codec", GzipCodec.class, CompressionCodec.class);
+		
+		//有效设置如下：
+		conf.setBoolean("mapred.output.compress", true);
+		conf.setClass("mapred.output.compression.codec", GzipCodec.class, CompressionCodec.class);
+		Job job = new Job(conf);
 		job.setJarByClass(WeatherMr.class);
 		job.setJobName("P_DW_SAL_CASE_DAY");
 		job.setNumReduceTasks(1);
