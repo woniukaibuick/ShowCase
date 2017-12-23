@@ -51,7 +51,7 @@ public class FindFriends {
 		
 		job.setNumReduceTasks(1);
 		
-		job.waitForCompletion(true);
+		System.exit(job.waitForCompletion(true) ? 0 : 1);
 	}
 
 }
