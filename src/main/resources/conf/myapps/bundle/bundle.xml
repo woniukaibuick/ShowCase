@@ -1,0 +1,11 @@
+<bundle-app name='bundle-app' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='uri:oozie:bundle:0.1'>
+
+          <coordinator name='cron-coord1'>
+                 <app-path>${coordinator1}</app-path>
+          </coordinator>
+
+          <coordinator name='cron-coord2'>
+                 <app-path>${coordinator2}</app-path>
+          </coordinator>
+
+</bundle-app>
