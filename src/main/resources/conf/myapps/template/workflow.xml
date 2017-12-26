@@ -1,0 +1,219 @@
+<workflow-app name="operation_sys_phrase2_template" xmlns="uri:oozie:workflow:0.5">
+<start to="fork"/>
+	<fork name="fork">  
+        <path start="action_sqoop_template_1_quanliang" />  
+        <path start="action_sqoop_template_2_zengliang" />
+    </fork>  
+     
+     <action name="action_sqoop_template_1_quanliang">
+        <sqoop xmlns="uri:oozie:sqoop-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+			<configuration>
+				<property>
+                    <name>oozie.launcher.mapreduce.map.memory.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+                    <name>oozie.launcher.yarn.app.mapreduce.am.resource.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+				  <name>oozie.use.system.libpath</name>
+				  <value>true</value>
+				</property>
+				<property>
+					<name>oozie.launcher.mapred.job.queue.name</name>
+					<value>${queueName}</value>
+				</property>
+				<property>
+				  <name>YEAR</name>
+				  <value>${YEAR}</value>
+				</property>
+				<property>
+				  <name>MONTH</name>
+				  <value>${MONTH}</value>
+				</property>
+				<property>
+				  <name>DAY</name>
+				  <value>${DAY}</value>
+				</property>	
+				<property>
+				  <name>DATE</name>
+				  <value>${DATE}</value>
+				</property>
+			</configuration>
+			<arg>import</arg>
+            <arg>--connect</arg>
+            <arg>${db_uri}</arg>
+            <arg>--username</arg>
+            <arg>${db_username}</arg>
+            <arg>--password</arg>
+            <arg>${db_passwd}</arg>
+            <arg>--table</arg>
+            <arg></arg>
+            <arg>--columns</arg>
+            <arg></arg>
+            <arg>--target-dir</arg>
+            <arg>/user/hive/warehouse/.db//date=${DATE}</arg>
+            <arg>--delete-target-dir</arg>
+			<arg>--hive-drop-import-delims</arg>
+            <arg>--null-string</arg>
+            <arg></arg>
+			<arg>--null-non-string</arg>
+            <arg></arg>
+            <arg>--fields-terminated-by</arg>
+            <arg>"\001"</arg>
+            <arg>--lines-terminated-by</arg>
+            <arg>"\n"</arg>
+            <arg>-m</arg>
+			<arg>1</arg>
+			<file>/user/oozie/share/conf/hive-site.xml#hive-site.xml</file>
+	   </sqoop>
+       <ok to="join"/>
+       <error to="failed_mail"/>
+    </action>
+     
+     <action name="action_sqoop_template_2_zengliang">
+        <sqoop xmlns="uri:oozie:sqoop-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+			<configuration>
+				<property>
+                    <name>oozie.launcher.mapreduce.map.memory.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+                    <name>oozie.launcher.yarn.app.mapreduce.am.resource.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+				  <name>oozie.use.system.libpath</name>
+				  <value>true</value>
+				</property>
+				<property>
+					<name>oozie.launcher.mapred.job.queue.name</name>
+					<value>${queueName}</value>
+				</property>
+				<property>
+				  <name>YEAR</name>
+				  <value>${YEAR}</value>
+				</property>
+				<property>
+				  <name>MONTH</name>
+				  <value>${MONTH}</value>
+				</property>
+				<property>
+				  <name>DAY</name>
+				  <value>${DAY}</value>
+				</property>	
+				<property>
+				  <name>DATE</name>
+				  <value>${DATE}</value>
+				</property>
+			</configuration>
+			<arg>import</arg>
+            <arg>--connect</arg>
+            <arg>${db_uri}</arg>
+            <arg>--username</arg>
+            <arg>${db_username}</arg>
+            <arg>--password</arg>
+            <arg>${db_passwd}</arg>
+            <arg>--table</arg>
+            <arg></arg>
+            <arg>--columns</arg>
+            <arg></arg>
+            <arg>--target-dir</arg>
+            <arg>/user/hive/warehouse/.db//date=${DATE}</arg>
+            <arg>--delete-target-dir</arg>
+			<arg>--hive-drop-import-delims</arg>
+            <arg>--null-string</arg>
+            <arg></arg>
+			<arg>--null-non-string</arg>
+            <arg></arg>
+            <arg>--fields-terminated-by</arg>
+            <arg>"\001"</arg>
+            <arg>--lines-terminated-by</arg>
+            <arg>"\n"</arg>
+            <arg>--where</arg>
+            <arg>update_time  &gt;= '${YEAR}-${MONTH}-${DAY} 00:00:00' and update_time  &lt;= '${YEAR}-${MONTH}-${DAY} 23:59:59'</arg>
+            <arg>-m</arg>
+			<arg>1</arg>
+			<file>/user/oozie/share/conf/hive-site.xml#hive-site.xml</file>
+	   </sqoop>
+       <ok to="join"/>
+       <error to="failed_mail"/>
+    </action>
+   
+        
+    <join name='join' to='action_hive_etl'/> 
+               
+     <action name="action_hive_etl">
+        <hive xmlns="uri:oozie:hive-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <job-xml>/user/oozie/share/conf/hive-site.xml</job-xml>
+            <configuration>
+                 <property>
+                    <name>oozie.launcher.mapreduce.map.memory.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+                    <name>oozie.launcher.yarn.app.mapreduce.am.resource.mb</name>
+                    <value>512</value>
+                </property>
+                <property>
+				  <name>oozie.use.system.libpath</name>
+				  <value>true</value>
+				</property>
+				<property>
+					<name>oozie.launcher.mapred.job.queue.name</name>
+					<value>${queueName}</value>
+				</property>
+				<property>
+				  <name>YEAR</name>
+				  <value>${YEAR}</value>
+				</property>
+				<property>
+				  <name>MONTH</name>
+				  <value>${MONTH}</value>
+				</property>
+				<property>
+				  <name>DAY</name>
+				  <value>${DAY}</value>
+				</property>	
+				<property>
+				  <name>DATE</name>
+				  <value>${DATE}</value>
+				</property>	
+            </configuration>
+            <script>etl_template.q</script>
+			<param>YEAR=${YEAR}</param>
+			<param>MONTH=${MONTH}</param>
+			<param>DAY=${DAY}</param>
+			<param>DATE=${DATE}</param>
+        </hive>
+        <ok to="end"/>
+        <error to="failed_mail"/>
+    </action>
+    
+   
+    
+  	<action name="failed_mail">
+		<email xmlns="uri:oozie:email-action:0.2">
+			<to>gongxuesong@globalegrow.com</to>
+			<subject>operation_sys_phrase2_fact_ifs failed</subject>
+			<body>operation_sys_phrase2_fact_ifs daily stat failed!
+                  Stat DATE:${timestamp()},
+                  Error message:[${wf:errorMessage(wf:lastErrorNode())}].
+            </body>
+		</email>
+		<ok to="kill" />
+		<error to="kill" />
+	</action>
+
+    <kill name="kill">
+        <message>Job failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+ </workflow-app>
