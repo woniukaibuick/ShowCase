@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.apache.hadoop.hive.ql.metadata.HiveException;
 import org.junit.Test;
 
-import showcase.dw.glbg.udf.connectby.ConnectByUDTF;
+import valar.showcase.hive.udf.connectby.ConnectByUDTF;
 
 
 public class ConnectByUDTFTest {
