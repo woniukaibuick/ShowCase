@@ -18,6 +18,7 @@ import com.alibaba.otter.canal.protocol.Message;
 
 import valar.showcase.canal.dto.HbaseEntity;
 import valar.showcase.canal.dto.TransDTO;
+import valar.showcase.kafka.KafkaProducer_;
 
 
 /**

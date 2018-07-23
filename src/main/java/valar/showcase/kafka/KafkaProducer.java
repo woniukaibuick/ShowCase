@@ -1,4 +1,4 @@
-package valar.showcase.canal;
+package valar.showcase.kafka;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

@@ -1,4 +1,4 @@
-package valar.showcase.canal;
+package valar.showcase.kafka;
 
 
 import java.util.Properties;

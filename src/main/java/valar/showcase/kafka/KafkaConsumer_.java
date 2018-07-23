@@ -1,4 +1,4 @@
-package valar.showcase.canal;
+package valar.showcase.kafka;
 import java.io.ByteArrayInputStream;
 import java.io.ObjectInputStream;
 import java.util.HashMap;

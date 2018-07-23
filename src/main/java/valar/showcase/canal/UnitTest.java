@@ -1,4 +1,7 @@
 package valar.showcase.canal;
+
+import valar.showcase.kafka.KafkaConsumer_;
+
 /**   
 * @Title: UnitTest.java 
 * @Package  
