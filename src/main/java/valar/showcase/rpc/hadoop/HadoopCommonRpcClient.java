@@ -16,9 +16,10 @@ import org.apache.hadoop.ipc.RPC;
 public class HadoopCommonRpcClient {
 	
 	public static void main(String[] args) throws IOException {
-		ClientServerProtocol proxy = RPC.getProxy(ClientServerProtocol.class, 1l, new InetSocketAddress("localhost", 8066), new Configuration());
+		// 传入的版本号无需与server端对应
+		ClientServerProtocol proxy = RPC.getProxy(ClientServerProtocol.class, 100l, new InetSocketAddress("localhost", 8066), new Configuration());
 		
-		System.out.println("client:"+proxy.sayHello("rpc"));
+		System.out.println("client:"+proxy.sayHello("rpc 1"));
 	}
 
 }
