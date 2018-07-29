@@ -1,4 +1,4 @@
-package valar.showcase.hadoop.mr;
+package valar.showcase.hadoop.mr.wcnewapi;
 
 import java.io.IOException;
 import java.util.StringTokenizer;

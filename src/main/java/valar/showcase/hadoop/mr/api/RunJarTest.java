@@ -1,4 +1,4 @@
-package valar.showcase.hadoop.mr;
+package valar.showcase.hadoop.mr.api;
 
 import org.apache.hadoop.util.RunJar;
 

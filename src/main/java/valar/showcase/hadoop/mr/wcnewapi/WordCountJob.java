@@ -1,4 +1,4 @@
-package valar.showcase.hadoop.mr;
+package valar.showcase.hadoop.mr.wcnewapi;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ public class WordCountJob {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration conf = new Configuration();
-		Job job = new Job(conf);
+		Job job = Job.getInstance(conf);
 		job.setJarByClass(WordCountJob.class);
 		job.setJobName("test job");
 		job.setOutputKeyClass(Text.class);
@@ -24,8 +24,8 @@ public class WordCountJob {
 		job.setReducerClass(WordCountReducer.class);
 
 		
-		FileInputFormat.addInputPath(job, new Path("/user/gongxuesong/mr_data"));
-		FileOutputFormat.setOutputPath(job, new Path("/user/gongxuesong/mr_output_1"));
+		FileInputFormat.addInputPath(job, new Path("/tmp/data/test"));
+		FileOutputFormat.setOutputPath(job, new Path("/tmp/ouput/word_count_mr_output"));
 		
 		job.waitForCompletion(true);
 	}

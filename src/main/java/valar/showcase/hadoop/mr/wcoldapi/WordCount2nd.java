@@ -1,4 +1,4 @@
-package valar.showcase.hadoop.mr;
+package valar.showcase.hadoop.mr.wcoldapi;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
