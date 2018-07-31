@@ -5,11 +5,11 @@ import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-import com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider.Text;
 
 public class WordCountJob {
 
@@ -25,7 +25,7 @@ public class WordCountJob {
 
 		
 		FileInputFormat.addInputPath(job, new Path("/tmp/data/test"));
-		FileOutputFormat.setOutputPath(job, new Path("/tmp/ouput/word_count_mr_output"));
+		FileOutputFormat.setOutputPath(job, new Path("/tmp/ouput/word_count_mr_output2"));
 		
 		job.waitForCompletion(true);
 	}
