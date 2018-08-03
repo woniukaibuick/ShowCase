@@ -9,10 +9,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.apache.hadoop.hive.ql.metadata.HiveException;
+import org.apache.hadoop.hive.udf.connectby.ConnectByUDTF;
 import org.junit.Assert;
 import org.junit.Test;
-
-import valar.showcase.hive.udf.connectby.ConnectByUDTF;
 
 public class UnitTest {
 	public static void main(String[] args) {

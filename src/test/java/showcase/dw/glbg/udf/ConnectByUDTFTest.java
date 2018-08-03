@@ -3,9 +3,8 @@ package showcase.dw.glbg.udf;
 import static org.junit.Assert.*;
 
 import org.apache.hadoop.hive.ql.metadata.HiveException;
+import org.apache.hadoop.hive.udf.connectby.ConnectByUDTF;
 import org.junit.Test;
-
-import valar.showcase.hive.udf.connectby.ConnectByUDTF;
 
 
 public class ConnectByUDTFTest {
