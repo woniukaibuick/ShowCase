@@ -31,7 +31,7 @@ public class HbaseUtilTest {
 	
 	private Admin admin;
     private Connection conn;
-    private String tableNameStr = "test";
+    private String tableNameStr = "hbase_util_test";
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -43,13 +43,11 @@ public class HbaseUtilTest {
 
 	@Before
 	public void setUp() throws Exception {
-		Configuration conf = new Configuration();
-		conf.set("hbase.zookeeper.quorum", "10.40.6.177");
+		Configuration conf = HBaseConfiguration.create();
+		conf.set("hbase.zookeeper.quorum", "192.168.199.128");
 		conf.set("hbase.zookeeper.property.clientPort", "2181");
 		 conn = ConnectionFactory.createConnection(conf);
 		 admin = conn.getAdmin();
-		
-			
 	}
 
 	@After
@@ -89,7 +87,7 @@ public class HbaseUtilTest {
 	}
 	@Test
 	public void testQueryTable() throws IOException {
-		Table table = conn.getTable(TableName.valueOf("lxw1234"));
+		Table table = conn.getTable(TableName.valueOf("test"));
 		ResultScanner rs = table.getScanner(new Scan());
 		for(Result s : rs) {
 			byte[] row = s.getRow();

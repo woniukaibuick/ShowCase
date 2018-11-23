@@ -1,0 +1,621 @@
+2018-11-22 15:32:05  [ main:1 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:32:05  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:32:05  [ main:66 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:32:05  [ main:69 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:32:05  [ main:70 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:32:05  [ main:71 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:32:05  [ main:71 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:32:05  [ main:83 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:32:05  [ main:84 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:32:05  [ main:84 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:32:05  [ main:95 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:32:05  [ main:97 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:32:05  [ main:98 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:32:05  [ main:98 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:32:05  [ main:99 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:32:05  [ main:99 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:32:05  [ main:198 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:32:05  [ main:199 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:32:05  [ main:437 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xd8bb5b72507966f0 (took 63 ms)
+2018-11-22 15:32:05  [ main:495 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:32:05  [ main:496 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:32:06  [ main:712 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:32:06  [ main:712 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:32:19  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:32:19  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:32:19  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:32:19  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:32:19  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:32:19  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:32:19  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:32:19  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:32:19  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:32:19  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:32:19  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:32:19  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:32:19  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:32:19  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:32:19  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:32:19  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:32:19  [ main:95 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:32:19  [ main:95 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:32:20  [ main:218 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x45c2b9c66a68511c (took 18 ms)
+2018-11-22 15:32:20  [ main:324 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:32:20  [ main:324 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:33:49  [ nioEventLoopGroup-2-1:89536 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:33:49  [ nioEventLoopGroup-2-1:89568 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:38:48  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:38:48  [ main:12 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:38:48  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:38:48  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:38:48  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:38:48  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:38:48  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:38:48  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:38:48  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:38:48  [ main:40 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:38:48  [ main:41 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:38:48  [ main:43 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:38:48  [ main:43 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:38:48  [ main:44 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:38:48  [ main:45 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:38:48  [ main:45 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:38:48  [ main:87 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:38:48  [ main:88 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:38:48  [ main:211 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x13bdea9302ab6223 (took 14 ms)
+2018-11-22 15:38:48  [ main:248 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:38:48  [ main:248 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:38:48  [ main:449 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:38:48  [ main:449 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:39:01  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:39:01  [ main:9 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:39:01  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:39:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:39:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:39:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:39:01  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:39:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:39:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:39:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:39:01  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:39:01  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:39:01  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:39:01  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:39:01  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:39:01  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:39:01  [ main:69 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:39:01  [ main:70 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:39:01  [ main:162 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xc8e35b096c814ea9 (took 13 ms)
+2018-11-22 15:39:01  [ main:198 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:39:01  [ main:198 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:39:07  [ nioEventLoopGroup-2-1:6244 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:39:07  [ nioEventLoopGroup-2-1:6251 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:39:25  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:39:25  [ main:9 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:39:25  [ main:23 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:39:25  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:39:25  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:39:25  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:39:25  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:39:25  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:39:25  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:39:25  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:39:25  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:39:25  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:39:25  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:39:25  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:39:25  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:39:25  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:39:25  [ main:66 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:39:25  [ main:67 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:39:25  [ main:190 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xd335006b318bfda6 (took 13 ms)
+2018-11-22 15:39:25  [ main:227 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:39:25  [ main:227 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:39:25  [ main:425 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:39:25  [ main:425 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:39:33  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:39:33  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:39:33  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:39:33  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:39:33  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:39:33  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:39:33  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:39:33  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:39:33  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:39:33  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:39:33  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:39:33  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:39:33  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:39:33  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:39:33  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:39:33  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:39:33  [ main:71 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:39:33  [ main:72 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:39:33  [ main:183 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xadd2285f99ebfa32 (took 19 ms)
+2018-11-22 15:39:33  [ main:225 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:39:33  [ main:225 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:39:43  [ nioEventLoopGroup-3-1:18177 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:39:43  [ nioEventLoopGroup-3-1:18181 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:40:19  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:40:19  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:40:19  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:40:19  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:40:19  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:40:19  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:40:19  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:40:19  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:40:19  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:40:19  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:40:19  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:40:19  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:40:19  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:40:19  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:40:19  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:40:19  [ main:39 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:40:19  [ main:71 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:40:19  [ main:71 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:40:19  [ main:210 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x834a967636f58db7 (took 17 ms)
+2018-11-22 15:40:19  [ main:253 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:40:19  [ main:254 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:40:19  [ main:458 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:40:19  [ main:458 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:41:18  [ main:1 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:41:18  [ main:20 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:41:18  [ main:59 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:41:18  [ main:65 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:41:18  [ main:66 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:41:18  [ main:69 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:41:18  [ main:75 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:41:18  [ main:76 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:41:18  [ main:77 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:41:18  [ main:77 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:41:18  [ main:79 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:41:18  [ main:87 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:41:18  [ main:88 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:41:18  [ main:89 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:41:18  [ main:90 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:41:18  [ main:91 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:41:18  [ main:196 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:41:18  [ main:197 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:41:18  [ main:421 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x809c5128e63e2a5a (took 17 ms)
+2018-11-22 15:41:18  [ main:565 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:41:18  [ main:566 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:41:25  [ nioEventLoopGroup-3-1:66017 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:41:25  [ nioEventLoopGroup-3-1:66024 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:52:43  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:52:43  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:52:43  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:52:43  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:52:43  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:52:43  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:52:43  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:52:43  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:52:43  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:52:43  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:52:43  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:52:43  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:52:43  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:52:43  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:52:43  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:52:43  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:52:43  [ main:76 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:52:43  [ main:77 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:52:43  [ main:198 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xdf5c46cf3fa726d2 (took 13 ms)
+2018-11-22 15:52:43  [ main:234 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:52:43  [ main:234 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:52:43  [ main:451 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:52:43  [ main:451 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:53:08  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:53:08  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:53:08  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:53:08  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:53:08  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:53:08  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:53:08  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:53:08  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:53:08  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:53:08  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:53:08  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:53:08  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:53:08  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:53:08  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:53:08  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:53:08  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:53:08  [ main:74 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:53:08  [ main:74 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:53:08  [ main:175 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x83787c0f880216fc (took 14 ms)
+2018-11-22 15:53:08  [ main:212 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:53:08  [ main:213 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:53:27  [ nioEventLoopGroup-3-1:43772 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:53:27  [ nioEventLoopGroup-3-1:43777 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:55:32  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:55:32  [ main:9 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:55:32  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:55:32  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:55:32  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:55:32  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:55:32  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:55:32  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:55:32  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:55:32  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:55:32  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:55:32  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:55:32  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:55:32  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:55:32  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:55:32  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:55:32  [ main:67 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:55:32  [ main:67 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:55:32  [ main:181 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x56a7f490d45a3d1c (took 13 ms)
+2018-11-22 15:55:32  [ main:217 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:55:32  [ main:217 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:55:32  [ main:430 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 15:55:32  [ main:430 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 15:55:39  [ main:1 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 15:55:39  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 15:55:39  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 15:55:39  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 15:55:39  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 15:55:39  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 15:55:39  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 15:55:39  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 15:55:39  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 15:55:39  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 15:55:39  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 15:55:39  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 15:55:39  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 15:55:39  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 15:55:39  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 15:55:39  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 15:55:39  [ main:68 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 15:55:39  [ main:68 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 15:55:40  [ main:160 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xf9f0ec14426d3273 (took 13 ms)
+2018-11-22 15:55:40  [ main:194 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 15:55:40  [ main:195 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 15:55:40  [ nioEventLoopGroup-2-1:301 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:55:40  [ nioEventLoopGroup-2-1:325 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 15:55:40  [ nioEventLoopGroup-3-1:7771 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 15:55:40  [ nioEventLoopGroup-3-1:7779 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 15:55:40  [ nioEventLoopGroup-2-1:358 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:02:58  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:02:58  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:02:58  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:02:58  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:02:58  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:02:58  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:02:58  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:02:58  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:02:58  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:02:58  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:02:58  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:02:58  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:02:58  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:02:58  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:02:58  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:02:58  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:02:58  [ main:87 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:02:58  [ main:87 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:02:59  [ main:201 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xa6ac12c6d3a874e1 (took 13 ms)
+2018-11-22 16:02:59  [ main:237 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:02:59  [ main:238 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:02:59  [ main:458 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:02:59  [ main:459 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:03:05  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:03:05  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:03:05  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:03:05  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:03:05  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:03:05  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:03:05  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:03:05  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:03:05  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:03:05  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:03:05  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:03:05  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:03:05  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:03:05  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:03:05  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:03:05  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:03:05  [ main:63 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:03:05  [ main:64 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:03:05  [ main:156 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xd6a71b70d5335729 (took 13 ms)
+2018-11-22 16:03:05  [ main:189 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:03:05  [ main:190 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:03:05  [ nioEventLoopGroup-2-1:240 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:03:05  [ nioEventLoopGroup-2-1:247 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:03:05  [ nioEventLoopGroup-3-1:7028 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:04:53  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:04:54  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:04:54  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:04:54  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:04:54  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:04:54  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:04:54  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:04:54  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:04:54  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:04:54  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:04:54  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:04:54  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:04:54  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:04:54  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:04:54  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:04:54  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:04:54  [ main:62 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:04:54  [ main:63 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:04:54  [ main:200 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x518209b035bc73e8 (took 13 ms)
+2018-11-22 16:04:54  [ main:239 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:04:54  [ main:240 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:04:54  [ main:455 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:04:54  [ main:455 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:05:01  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:05:01  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:05:01  [ main:23 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:05:01  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:05:01  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:05:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:05:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:05:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:05:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:05:01  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:05:01  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:05:01  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:05:01  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:05:01  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:05:01  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:05:01  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:05:01  [ main:64 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:05:01  [ main:65 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:05:01  [ main:157 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xad390e18183cbfb0 (took 13 ms)
+2018-11-22 16:05:01  [ main:192 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:05:01  [ main:192 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:05:01  [ nioEventLoopGroup-2-1:247 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:05:01  [ nioEventLoopGroup-2-1:253 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:05:01  [ nioEventLoopGroup-3-1:7529 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:05:01  [ nioEventLoopGroup-3-1:7535 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:05:42  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:05:42  [ main:13 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:05:42  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:05:42  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:05:42  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:05:42  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:05:42  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:05:42  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:05:42  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:05:42  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:05:42  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:05:42  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:05:42  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:05:42  [ main:37 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:05:42  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:05:42  [ main:38 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:05:42  [ main:69 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:05:42  [ main:70 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:05:42  [ main:189 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xcfdd9cad3cad58b1 (took 14 ms)
+2018-11-22 16:05:42  [ main:226 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:05:42  [ main:226 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:05:42  [ main:429 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:05:42  [ main:430 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:05:46  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:05:46  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:05:46  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:05:46  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:05:46  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:05:46  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:05:46  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:05:46  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:05:46  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:05:46  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:05:46  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:05:46  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:05:46  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:05:46  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:05:46  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:05:46  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:05:46  [ main:64 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:05:46  [ main:64 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:05:46  [ main:157 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x50094727bd3b5b7e (took 13 ms)
+2018-11-22 16:05:46  [ main:191 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:05:46  [ main:192 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:05:46  [ nioEventLoopGroup-2-1:242 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:05:46  [ nioEventLoopGroup-2-1:247 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:05:46  [ nioEventLoopGroup-3-1:3939 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:05:46  [ nioEventLoopGroup-3-1:3945 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:05:46  [ nioEventLoopGroup-2-1:270 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:08:58  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:08:58  [ main:7 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:08:58  [ main:21 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:08:58  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:08:58  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:08:58  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:08:58  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:08:58  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:08:58  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:08:58  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:08:58  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:08:58  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:08:58  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:08:58  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:08:58  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:08:58  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:08:58  [ main:59 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:08:58  [ main:59 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:08:58  [ main:149 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x51239c46a4c676e0 (took 10 ms)
+2018-11-22 16:08:58  [ main:178 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:08:58  [ main:178 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:08:58  [ main:333 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:08:58  [ main:333 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:09:03  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:09:03  [ main:7 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:09:03  [ main:20 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:09:03  [ main:23 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:09:03  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:09:03  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:09:03  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:09:03  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:09:03  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:09:03  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:09:03  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:09:03  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:09:03  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:09:03  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:09:03  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:09:03  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:09:03  [ main:57 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:09:04  [ main:58 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:09:04  [ main:131 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xdb98d20ba0fb7eb0 (took 10 ms)
+2018-11-22 16:09:04  [ main:158 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:09:04  [ main:158 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:09:04  [ nioEventLoopGroup-2-1:197 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:09:04  [ nioEventLoopGroup-2-1:201 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:09:04  [ nioEventLoopGroup-3-1:5981 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:09:04  [ nioEventLoopGroup-3-1:5994 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:09:04  [ nioEventLoopGroup-3-1:6009 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:10:01  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:10:01  [ main:9 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:10:01  [ main:23 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:10:01  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:10:01  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:10:01  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:10:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:10:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:10:01  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:10:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:10:01  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:10:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:10:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:10:01  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:10:01  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:10:01  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:10:01  [ main:60 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:10:01  [ main:60 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:10:01  [ main:154 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x701689c787c794ca (took 10 ms)
+2018-11-22 16:10:01  [ main:183 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:10:01  [ main:183 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:10:01  [ main:344 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:10:01  [ main:345 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:10:10  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:10:10  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:10:10  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:10:10  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:10:10  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:10:10  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:10:10  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:10:10  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:10:10  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:10:10  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:10:10  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:10:10  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:10:10  [ main:34 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:10:10  [ main:35 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:10:10  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:10:10  [ main:36 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:10:10  [ main:64 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:10:10  [ main:65 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:10:10  [ main:138 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x33576ca9232c1c81 (took 10 ms)
+2018-11-22 16:10:10  [ main:165 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:10:10  [ main:165 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:10:10  [ nioEventLoopGroup-2-1:204 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:10:10  [ nioEventLoopGroup-2-1:208 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:10:10  [ nioEventLoopGroup-3-1:9246 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:10:10  [ nioEventLoopGroup-3-1:9256 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:18:11  [ nioEventLoopGroup-3-1:489822 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:18:34  [ main:1 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:18:34  [ main:9 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:18:34  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:18:34  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:18:34  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:18:34  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:18:34  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:18:34  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:18:34  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:18:34  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:18:34  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:18:34  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:18:34  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:18:34  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:18:34  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:18:34  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:18:34  [ main:62 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:18:34  [ main:63 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:18:34  [ main:157 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x272ed72f34e4c263 (took 10 ms)
+2018-11-22 16:18:34  [ main:186 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:18:34  [ main:186 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:18:34  [ main:348 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:18:34  [ main:349 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:18:41  [ main:1 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:18:41  [ main:10 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:18:41  [ main:21 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:18:41  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:18:41  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:18:41  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:18:41  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:18:41  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:18:41  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:18:41  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:18:41  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:18:41  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:18:41  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:18:41  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:18:41  [ main:32 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:18:41  [ main:33 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:18:41  [ main:62 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:18:41  [ main:62 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:18:42  [ main:135 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0xdc635c5254cd09f7 (took 11 ms)
+2018-11-22 16:18:42  [ main:162 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:18:42  [ main:163 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:18:42  [ nioEventLoopGroup-2-1:262 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:18:42  [ nioEventLoopGroup-2-1:266 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:18:42  [ nioEventLoopGroup-3-1:7723 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:18:42  [ nioEventLoopGroup-3-1:7729 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:18:42  [ nioEventLoopGroup-2-1:291 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:18:42  [ nioEventLoopGroup-3-1:7747 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:20:04  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:20:04  [ main:8 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:20:04  [ main:21 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:20:04  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:20:04  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:20:04  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:20:04  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:20:04  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:20:04  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:20:04  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:20:04  [ main:28 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:20:04  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:20:04  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:20:04  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:20:04  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:20:04  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:20:04  [ main:60 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:20:04  [ main:60 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:20:04  [ main:150 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x11cf3d5f54ec91a7 (took 10 ms)
+2018-11-22 16:20:04  [ main:178 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:20:04  [ main:178 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:20:04  [ main:341 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:86)Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-11-22 16:20:04  [ main:341 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)\proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-11-22 16:20:09  [ main:0 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Using SLF4J as the default logging framework
+2018-11-22 16:20:09  [ main:7 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.eventLoopThreads: 16
+2018-11-22 16:20:09  [ main:19 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Buffer.address: available
+2018-11-22 16:20:09  [ main:22 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe.theUnsafe: available
+2018-11-22 16:20:09  [ main:23 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)sun.misc.Unsafe.copyMemory: available
+2018-11-22 16:20:09  [ main:24 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.Bits.unaligned: true
+2018-11-22 16:20:09  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Platform: Windows
+2018-11-22 16:20:09  [ main:25 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)Java version: 8
+2018-11-22 16:20:09  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noUnsafe: false
+2018-11-22 16:20:09  [ main:26 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)sun.misc.Unsafe: available
+2018-11-22 16:20:09  [ main:27 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noJavassist: false
+2018-11-22 16:20:09  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)Javassist: unavailable
+2018-11-22 16:20:09  [ main:29 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2018-11-22 16:20:09  [ main:30 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.tmpdir: C:\Users\gongva\AppData\Local\Temp (java.io.tmpdir)
+2018-11-22 16:20:09  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-11-22 16:20:09  [ main:31 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noPreferDirect: false
+2018-11-22 16:20:09  [ main:65 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.noKeySetOptimization: false
+2018-11-22 16:20:09  [ main:66 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.selectorAutoRebuildThreshold: 512
+2018-11-22 16:20:10  [ main:142 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:71)-Dio.netty.initialSeedUniquifier: 0x89e818002f33bc4d (took 10 ms)
+2018-11-22 16:20:10  [ main:169 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.allocator.type: unpooled
+2018-11-22 16:20:10  [ main:169 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.threadLocalDirectBufferSize: 65536
+2018-11-22 16:20:10  [ nioEventLoopGroup-2-1:215 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:20:10  [ nioEventLoopGroup-2-1:218 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:20:10  [ nioEventLoopGroup-3-1:6127 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:81)-Dio.netty.leakDetectionLevel: simple
+2018-11-22 16:20:10  [ nioEventLoopGroup-3-1:6134 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)-Dio.netty.recycler.maxCapacity.default: 262144
+2018-11-22 16:20:10  [ nioEventLoopGroup-2-1:260 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available
+2018-11-22 16:20:10  [ nioEventLoopGroup-3-1:6163 ] - [ DEBUG ] method:io.netty.util.internal.logging.Slf4JLogger.debug(Slf4JLogger.java:76)java.nio.ByteBuffer.cleaner(): available

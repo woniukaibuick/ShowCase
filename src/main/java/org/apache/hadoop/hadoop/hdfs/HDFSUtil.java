@@ -22,12 +22,12 @@ public class HDFSUtil {
 				//"/conf/core-site.xml";
 		String key = "fs.default.name";
 		Configuration conf = new Configuration();
-		conf.set(key, "hdfs://10.40.6.177:8020");
+		conf.set(key, "hdfs://192.168.199.128:9000");
 		conf.set("fs.hdfs.impl",org.apache.hadoop.hdfs.DistributedFileSystem.class.getName()); 
 		
-	    String localSrc = "C://Users/gongxuesong/Desktop/T.txt";
-	    String dst = "/user/gongxuesong/tmp_11";
-	    String dstFile = "/user/gongxuesong/tmp_11/T.txt";
+	    String localSrc = "C:\\Users\\gongva\\Desktop\\T.log";
+	    String dst = "/tmp_12";
+	    String dstFile = "/T.txt";
 	    
 	    InputStream in = new BufferedInputStream(new FileInputStream(localSrc));
 	    
