@@ -343,5 +343,12 @@
 	  <module>flume</module>
 	  <module>data</module>
 	  <module>jdk</module>
+	  <module>hive</module>
+	  <module>oozie</module>
+	  <module>scala</module>
+	  <module>oracle</module>
+	  <module>shell</module>
+	  <module>cdh</module>
+	  <module>sqoop</module>
   </modules>
 </project>
