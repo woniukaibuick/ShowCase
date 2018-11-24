@@ -40,9 +40,15 @@ public class TimeServer {
 
         @Override
         protected void initChannel(SocketChannel socketChannel) throws Exception {
-            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
+            socketChannel.pipeline().addLast(new TimeServerOutBoundHandler2());
+            socketChannel.pipeline().addLast(new TimeServerOutBoundHandler3());
+        	
+        	socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
             socketChannel.pipeline().addLast(new StringDecoder());
+            socketChannel.pipeline().addLast(new TimeServerInBoundHandler2());
+            socketChannel.pipeline().addLast(new TimeServerInBoundHandler3());
             socketChannel.pipeline().addLast(new TimeServerHandler());
+
         }
     }
 

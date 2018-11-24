@@ -17,7 +17,7 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
     private int counter;
 @Override
     public void channelRead(ChannelHandlerContext ctx,Object msg) throws Exception{
-       System.out.println("channelRead...");
+       System.out.println("TimeServerHandler last ...");
 /*       ByteBuf bb = (ByteBuf) msg;
        byte[] bytes = new byte[bb.readableBytes()];
        bb.readBytes(bytes);
