@@ -3,8 +3,6 @@ package org.apache.hadoop.java.thread;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-import org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement_return;
-
 /**   
 * @Title: Setup.java 
 * @Package showcase.dw.glbg.thread 

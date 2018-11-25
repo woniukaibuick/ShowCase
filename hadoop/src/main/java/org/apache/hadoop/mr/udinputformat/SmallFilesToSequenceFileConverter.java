@@ -4,10 +4,14 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.JobConf;
+import org.apache.hadoop.mapred.JobConfigurable;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRConfig;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -26,6 +30,8 @@ public class SmallFilesToSequenceFileConverter extends Configured implements Too
 	@Override
 	public int run(String[] args) throws Exception {
 		Configuration conf  = new Configuration();
+		conf.set("mapreduce.framework.name", "yarn");
+		conf.set("yarn.resourcemanager.hostname", "192.168.199.128");
 		System.setProperty("HADOOP_USER_NAME", "hadoop");
 		Job job = Job.getInstance(conf);
 		job.setInputFormatClass(WholeFileInputFormat.class);
@@ -33,6 +39,8 @@ public class SmallFilesToSequenceFileConverter extends Configured implements Too
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(BytesWritable.class);
 		job.setMapperClass(SequenceFileMapper.class);
+		WholeFileInputFormat.setInputPaths(job, new Path(args[0]));
+		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		return job.waitForCompletion(true) ? 0 : 1;
 	}
 	

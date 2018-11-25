@@ -11,7 +11,6 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
 
-import com.alibaba.fastjson.util.IOUtils;
 
 /**   
 * @Title: SequenceFileTest.java 

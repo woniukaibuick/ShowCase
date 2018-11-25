@@ -3,7 +3,6 @@ package org.apache.hadoop.mr.api;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.apache.hadoop.hive.ql.exec.TaskRunner;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.JobContext;
