@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Random;
+import java.util.TreeMap;
 
 import junit.framework.Assert;
 
@@ -76,5 +77,36 @@ public class TopK {
 		}
 	}
 	
+	@Test
+	public void testTreeMap(){
+		
+		TreeMap<Integer,Double> m = new TreeMap<Integer,Double>();
+		for(int i : data){
+			m.put(i, i+0.11);
+		}
+		for (Integer key : m.keySet()) {
+			System.out.println(key);
+		}
+		
+	}
+	@Test
+	public void testTreeMapWithComparator(){
+		
+		TreeMap<Integer,Double> m = new TreeMap<Integer,Double>(new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				// TODO Auto-generated method stub
+				return -o1.compareTo(o2);
+			}
+		});
+		for(int i : data){
+			m.put(i, i+0.11);
+		}
+		for (Integer key : m.keySet()) {
+			System.out.println(key);
+		}
+		
+	}
 
 }
