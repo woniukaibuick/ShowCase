@@ -1,4 +1,4 @@
-package org.apache.hadoop.zk.simulate;
+package simulate;
 
 import java.io.IOException;
 

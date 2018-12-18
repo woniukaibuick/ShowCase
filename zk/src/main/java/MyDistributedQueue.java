@@ -1,4 +1,3 @@
-package org.apache.hadoop.zk;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -13,7 +12,6 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.apache.hadoop.util.StringUtil;
 import org.apache.log4j.Logger;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.ZooDefs.Ids;
@@ -93,7 +91,7 @@ public class MyDistributedQueue<T> implements Queue<T> {
 		int index = paths.indexOf(nodeID);
 		for (int i = 0; i < index; i++) {
 			String data = getDataNode(client, paths.get(i));
-			if(StringUtil.isEmpty(data) ||  !NodeStatus.SUCCEEDED.equals(getNodeStatus(data))) {
+			if(data == null || data.isEmpty() ||  !NodeStatus.SUCCEEDED.equals(getNodeStatus(data))) {
 				
 			}
 		}

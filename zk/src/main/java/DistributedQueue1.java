@@ -1,4 +1,3 @@
-package org.apache.hadoop.zk;
 
 import java.util.List;
 import java.util.NoSuchElementException;

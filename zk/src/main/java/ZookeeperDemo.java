@@ -1,9 +1,6 @@
-package org.apache.hadoop.zk;
 
 import java.net.InetAddress;
 import java.util.List;
-
-import javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction;
 
 import org.apache.curator.CuratorZookeeperClient;
 import org.apache.curator.RetryPolicy;

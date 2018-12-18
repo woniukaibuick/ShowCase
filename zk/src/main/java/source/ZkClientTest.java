@@ -1,4 +1,4 @@
-package org.apache.hadoop.zk.source;
+package source;
 import java.io.IOException;
 
 import org.apache.zookeeper.KeeperException;

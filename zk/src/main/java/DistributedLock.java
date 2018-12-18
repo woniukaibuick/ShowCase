@@ -1,4 +1,3 @@
-package org.apache.hadoop.zk;
 
 
 import java.io.IOException;
