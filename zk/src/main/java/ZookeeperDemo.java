@@ -1,6 +1,7 @@
 
 import java.net.InetAddress;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.curator.CuratorZookeeperClient;
 import org.apache.curator.RetryPolicy;
@@ -13,8 +14,12 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCache;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheEvent;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
+import org.apache.curator.framework.recipes.locks.InterProcessMultiLock;
+import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.ZooKeeper;
+import org.junit.Before;
+import org.junit.Test;
 /**
  * DESC: ZooKeeper command
 	ZooKeeper -server host:port cmd args
@@ -55,17 +60,44 @@ import org.apache.zookeeper.ZooKeeper;
  *
  */
 public class ZookeeperDemo {
-	public static void main(String[] args) throws Exception {
+	private CuratorFramework client;
+	private String basePath = "/valar";
+	private String connectString = "127.0.0.1:2181";
+	/**
+	 * 每一个zk集群只需要一个CuratorFramework 实例
+	 * RetryPolicy有几种类型 RetryUntilElapsed  RetryOneTime RetryNTimes
+	 * ExponentialBackoffRetry BoundedExponentialBackoffRetry
+	 */
+	@Before	
+	public void init(){
         // 1000：表示curator链接zk的时候超时时间是多少 3：表示链接zk的最大重试次数
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
-        String connectString = "127.0.0.1:2181";
         int sessionTimeoutMs = 5000;// 这个值只能在4000-40000ms之间 表示链接断掉之后多长时间临时节点会消失
         int connectionTimeoutMs = 3000;// 获取链接的超时时间
-        CuratorFramework client = CuratorFrameworkFactory.newClient(
+        client = CuratorFrameworkFactory.newClient(
                 connectString, sessionTimeoutMs, connectionTimeoutMs,
                 retryPolicy);
         client.start();// 开启客户端
-
+	}
+	@Test
+	public void testCreate() throws Exception{
+		client.create().forPath(basePath, "helloworld".getBytes());
+	}
+	@Test
+	public void testDistributedLock() throws Exception{
+		InterProcessMutex lock = new InterProcessMutex(client, basePath);
+		if (lock.acquire(100, TimeUnit.SECONDS)) {
+			try {
+				// TODO: sth
+			} catch (Exception e) {
+				// TODO: handle exception
+			} finally {
+				lock.release();
+			}
+		}
+	}
+	@Test
+	public void testGetChildren() throws Exception {
         InetAddress localhost = InetAddress.getLocalHost();
         String ip = localhost.getHostAddress();
         

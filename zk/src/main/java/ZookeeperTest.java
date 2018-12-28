@@ -23,7 +23,10 @@ import org.junit.Test;
  */
 public class ZookeeperTest {
 	private ZooKeeper client;
-	private String connectString = "127.0.0.1:2181";
+	/**
+	 * 测试chroot特性，connectString后面新增了应用路经，zk连接后所有操作路经都是相对chroot来说的
+	 */
+	private String connectString = "127.0.0.1:2181/app/junit";
 	private int sessionTimeout = 2000;
 	@Before
 	public void init() throws IOException {
@@ -95,5 +98,45 @@ public class ZookeeperTest {
 		System.out.println("client with foo:false auth get /zk-book data:"+new String(data3));
 		//org.apache.zookeeper.KeeperException$NoAuthException: KeeperErrorCode = NoAuth for /zk-book
 	}
+	
+	@Test
+	public void testChroot() throws KeeperException, InterruptedException{
+		client.addAuthInfo("digest", "foo:true".getBytes());
+		client.create("/testChroot", "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
+	}
+	
+	/**
+	 * 左移的规则只记住一点：丢弃最高位，0补最低位
+	 * 右移的规则只记住一点：符号位不变，左边补上符号位
+                     无符号右移的规则只记住一点：忽略了符号位扩展，0补最高位
+	 */
+	@Test
+	public void testSessionTrackerImplInitializeNextSession(){
+		long currentTimeMillis= -1545818009343l;
+		System.out.println(Long.toBinaryString(currentTimeMillis));
+		
+		long a = currentTimeMillis << 24;
+		System.out.println(Long.toBinaryString(a));
+		;
+		long b = a >> 8;
+		System.out.println(Long.toBinaryString(b));
+		
+		long c =  a >>> 8;
+		System.out.println(Long.toBinaryString(c));
+		
+		//output
+		/*
+		1111111111111111111111101001100000010110000100010001000100000001
+		1001100000010110000100010001000100000001000000000000000000000000
+		1111111110011000000101100001000100010001000000010000000000000000
+		0000000010011000000101100001000100010001000000010000000000000000
+		*/
+	}
+/*    public static long initializeNextSession(long id) {
+        long nextSid = 0;
+        nextSid = (System.currentTimeMillis() << 24) >> 8;
+        nextSid =  nextSid | (id <<56);
+        return nextSid;
+    }*/
 
 }
