@@ -11,6 +11,8 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
+import org.apache.zookeeper.server.LogFormatter;
+import org.apache.zookeeper.server.SnapshotFormatter;
 import org.apache.zookeeper.server.auth.DigestAuthenticationProvider;
 import org.junit.Before;
 import org.junit.Test;
@@ -137,6 +139,39 @@ public class ZookeeperTest {
         nextSid = (System.currentTimeMillis() << 24) >> 8;
         nextSid =  nextSid | (id <<56);
         return nextSid;
-    }*/
+    }*/	
+	/**
+	 * 示例日志文件内容查看如下所示：
+	ZooKeeper Transactional Log File with dbid 0 txnlog format version 2
+	null:None
+	19-1-8 下午07时07分21秒 session 0x1000006ed870000 cxid 0x0 zxid 0x1 createSession 30000
+	
+	19-1-8 下午07时08分40秒 session 0x1000006ed870000 cxid 0x0 zxid 0x2 closeSession null
+	19-1-8 下午07时19分09秒 session 0x1000006ed870001 cxid 0x0 zxid 0x3 createSession 5000
+	
+	null:None
+	19-1-8 下午07时19分10秒 session 0x1000006ed870001 cxid 0x1 zxid 0x4 create '/valar,#68656c6c6f776f726c64,v{s{31,s{'world,'anyone}}},F,1
+	
+	19-1-8 下午07时19分16秒 session 0x1000006ed870001 cxid 0x0 zxid 0x5 closeSession null
+	19-1-8 下午07时22分31秒 session 0x1000006ed870002 cxid 0x0 zxid 0x6 createSession 4000
+
+EOF reached after 6 txns.
+
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testLogFormatter() throws Exception{
+		LogFormatter.main(new String[]{"D:\\Software\\zk\\zookeeper-3.4.13\\bin\\tmp\\zookeeper\\version-2\\log.1"});
+	}
+	
+	/**
+	 * Dump a snapshot file to stdout
+	 * @throws Exception
+	 */
+	@Test
+	public void testSnapshotFormatter() throws Exception{
+		SnapshotFormatter.main(new String[]{"snapshot file path"});
+	}
 
 }
