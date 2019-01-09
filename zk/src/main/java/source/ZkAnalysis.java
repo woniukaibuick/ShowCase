@@ -5,9 +5,11 @@ import java.io.IOException;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.server.ServerCnxnFactory;
+import org.apache.zookeeper.server.ZKDatabase;
 import org.apache.zookeeper.server.ZooKeeperServer;
 import org.apache.zookeeper.server.ZooKeeperServerMain;
 import org.apache.zookeeper.server.persistence.FileTxnSnapLog;
+import org.apache.zookeeper.server.quorum.QuorumPeer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -39,6 +41,31 @@ public class ZkAnalysis {
 		System.setProperty("zookeeper.jmx.log4j.disable", "false");
 		// zk服务器启动的入口类
 		org.apache.zookeeper.server.quorum.QuorumPeerMain.main(args);
+		//QuorumPeerMain.runFromConfig
+/*		  ServerCnxnFactory cnxnFactory = ServerCnxnFactory.createFactory();
+          cnxnFactory.configure(config.getClientPortAddress(),
+                                config.getMaxClientCnxns());
+  
+          quorumPeer = new QuorumPeer();
+          quorumPeer.setClientPortAddress(config.getClientPortAddress());
+          quorumPeer.setTxnFactory(new FileTxnSnapLog(
+                      new File(config.getDataLogDir()),
+                      new File(config.getDataDir())));
+          quorumPeer.setQuorumPeers(config.getServers());
+          quorumPeer.setElectionType(config.getElectionAlg());
+          quorumPeer.setMyid(config.getServerId());
+          quorumPeer.setTickTime(config.getTickTime());
+          quorumPeer.setMinSessionTimeout(config.getMinSessionTimeout());
+          quorumPeer.setMaxSessionTimeout(config.getMaxSessionTimeout());
+          quorumPeer.setInitLimit(config.getInitLimit());
+          quorumPeer.setSyncLimit(config.getSyncLimit());
+          quorumPeer.setQuorumVerifier(config.getQuorumVerifier());
+          quorumPeer.setCnxnFactory(cnxnFactory);
+          quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));
+          quorumPeer.setLearnerType(config.getPeerType());
+  
+          quorumPeer.start();
+          quorumPeer.join();*/
 	}
 
 	/**
