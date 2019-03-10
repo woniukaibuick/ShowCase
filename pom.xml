@@ -98,5 +98,6 @@
 	  <module>cdh</module>
 	  <module>sqoop</module>
 	  <module>canal</module>
+	  <module>pdf</module>
   </modules>
 </project>
